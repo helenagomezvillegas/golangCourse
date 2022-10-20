@@ -10,6 +10,30 @@ The package installs the Go distribution to /usr/local/go. The package should pu
 * Confirm that the command prints the installed version of Go.
 
 ## Hello World!
+```
+package main
+import "fmt"
+func main() {
+
+	fmt.Println("Hello World!")
+}
+
+```
+## Single and Multiline comment
+```
+package main
+import "fmt"
+// Single comment
+
+/*Multiline
+ comment
+ */
+func main() {
+
+        fmt.Println("Hello World!")
+}
+
+```
 
 
 
