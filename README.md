@@ -52,8 +52,34 @@ func main() {
 	fmt.Println(title)
 }
 ```
-### Static and Dinamic
 ### Number
+#### Integer
+> int
+* The numeric data type of int has several versions, which include:
+int8
+int16
+int32
+int64
+uint8
+uint16
+uint32
+uint64
+The data types starting from int store signed integers while those starting with uint contain unsigned integers, and the numeric value that follows each data type represents the number of bytes that is stored.package main
+```
+import "fmt"
+
+func main() {
+   var num int
+   num = 20
+   fmt.Printf("Data type of %d is %T\n", num, num);
+
+}
+```
+
+
+
+#### Float
+> float
 ### Boolean
 ### String
 
