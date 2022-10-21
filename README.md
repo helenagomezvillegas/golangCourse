@@ -75,13 +75,38 @@ func main() {
 
 }
 ```
-
-
-
 #### Float
 > float
-### Boolean
+The FloatType identifier in Golang serves as a stand-in for either in-built float data type float32 or float64. Both the float32 and float64 data types represent numbers with decimal components.
+
+The float32 data type occupies 32
+32
+ bits in memory, whereas the float64 data type occupies 64
+64
+ bits in memory. The default type for floating-point numbers is float64.
+
+The command below shows how to declare a floating-point number in Golang:
+> var a float32 = 2.25
+> var b float64 = 2.50
+> var c = 3.20
 ### String
+string in Golang is a set of all strings that contain 8-bit bytes. By default, strings in Golang are UTF-8 encoded.
+
+Variable of type string is enclosed between double-quotes. The type string variable’s value is immutable.
+
+package main
+import "fmt"
+```
+func main() {
+   var sentence string
+   sentence = "Hello From Everybody"
+   fmt.Printf("Sentence : %s\n", sentence);
+   fmt.Printf("Data type of sentence is %T\n", sentence);
+
+}
+```
+
+
 
 
 
