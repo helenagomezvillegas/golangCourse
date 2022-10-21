@@ -225,6 +225,21 @@ func main() {
 ```
 
 ## Converting Between types
+### Example Casting integer to float
+```
+package main
+
+import "fmt"
+
+func main() {
+   var i int = 90
+   var j float64 = float64(i) // This is a casting integer to float
+   fmt.Printf("%.2f", j);
+
+}
+```
+or we can use strconv package https://pkg.go.dev/strconv
+
 
 
 
