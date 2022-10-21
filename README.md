@@ -2,16 +2,6 @@
 
 # Table of contents
 
-- [Install go from https://go.dev/doc/install](#install-go-from-httpsgodevdocinstall)
-- [Hello World!](#hello-world)
-- [Single and Multiline comment](#single-and-multiline-comment)
-- [Types and Variables](#types-and-variables)
-  - [Number](#number)
-  - [String](#string)
-  - [Boolean](#boolean)
-  - [Print variarables with format](#print-variarables-with-format)
-  - [Local and Global variables](#local-and-global-variables)
-
 ## Install go from https://go.dev/doc/install
 1. Go Download
 package for (Mac, Linux or Windows)
@@ -204,6 +194,40 @@ func main() {
 
 }
 ```
+## Find type of variable
+Variable is a placeholder of the information which can be changed at runtime. And variables allow to Retrieve and Manipulate the stored information.
+There are 3 ways to find the type of variables in Golang as follows:
+
+* Using reflect.TypeOf Function
+* Using reflect.ValueOf.Kind() Function
+* Using %T with Printf
+```
+package main
+import "fmt"
+import "reflect"
+
+func main() {
+   var grades int = 42
+   var message  string = "Hello"
+   var checkin bool = true
+   var amount float64 = 0.9
+
+   fmt.Printf("variables grades = %v is of type %T \n", grades, grades)
+   fmt.Printf("variables message = %v is of type %T \n", message, message)
+   fmt.Printf("variables checkin = %v is of type %T \n", checkin, checkin)
+   fmt.Printf("variables amount = %v is of type %T \n", amount, amount)
+
+   // using reflect.Type
+   fmt.Printf("Type: %v \n", reflect.TypeOf(1000))
+   fmt.Printf("Type: %v \n", reflect.TypeOf("Maria"))
+
+}
+```
+
+## Converting Between types
+
+
+
 
 
 
