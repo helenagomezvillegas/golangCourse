@@ -105,8 +105,21 @@ func main() {
 
 }
 ```
+### Boolean
+Boolean values are those which can be assigned true or false and has the type bool with it.
 
+```
+package main
 
+import (
+    "fmt"
+)
+
+func main() {
+    var bVal bool   // default is false
+    fmt.Printf("bVal: %v\n", bVal)
+}
+```
 
 
 
