@@ -106,10 +106,10 @@ The command below shows how to declare a floating-point number in Golang:
 string in Golang is a set of all strings that contain 8-bit bytes. By default, strings in Golang are UTF-8 encoded.
 
 Variable of type string is enclosed between double-quotes. The type string variable’s value is immutable.
-
+```
 package main
 import "fmt"
-```
+
 func main() {
    var sentence string
    sentence = "Hello From Everybody"
@@ -133,9 +133,77 @@ func main() {
     fmt.Printf("bVal: %v\n", bVal)
 }
 ```
-### Print variarables with format
+## Print variarables with format
 ![Printf- Format specifiers ](/img/fmtprint.png "Table formats")
-### Local and Global variables
+## Local variable Global variables
+### Example  Local and Global variable
+```
+package main
+
+import "fmt"
+// This is a Global variable
+var name string = "Lisa"
+func main() {
+   This is a Local variable
+   var  lastname  string = "Patterson"
+   fmt.Println(name);
+
+}
+```
+## Zero Values
+![Printf- Format specifiers ](/img/zeroValues.png "Table formats")
+
+### Example:
+```
+package main
+
+import "fmt"
+
+func main() {
+   var num0 int
+   var num1 float64
+   fmt.Printf("Data type of %d is %T\n", num0, num0);
+   fmt.Printf("Data type of %.2f is %T\n", num1, num1);
+
+}
+```
+> go run zeroValues.go
+> Data type of 0 is int
+> Data type of 0.00 is float64
+
+see more in this table
+![Printf- Format specifiers ](/img/values.png "Table formats")
+
+##  User input
+### Single Input
+```
+package main
+import "fmt"
+
+func main() {
+   var name string
+   // single input
+   fmt.Print("Enter your name");
+   fmt.Scanf("%s", &name);
+
+}
+```
+### Multiple Input
+```
+package main
+import "fmt"
+
+func main() {
+   var name string
+   var is_muggle bool
+
+   // single input
+   fmt.Print("Enter your name and your muggle");
+   fmt.Scanf("%s %t", &name, &is_muggle);
+   fmt.Println(name, is_muggle);
+
+}
+```
 
 
 
