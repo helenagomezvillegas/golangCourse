@@ -1,4 +1,17 @@
 # golangCourse
+
+# Table of contents
+
+- [Install go from https://go.dev/doc/install](#install-go-from-httpsgodevdocinstall)
+- [Hello World!](#hello-world)
+- [Single and Multiline comment](#single-and-multiline-comment)
+- [Types and Variables](#types-and-variables)
+  - [Number](#number)
+  - [String](#string)
+  - [Boolean](#boolean)
+  - [Print variarables with format](#print-variarables-with-format)
+  - [Local and Global variables](#local-and-global-variables)
+
 ## Install go from https://go.dev/doc/install
 1. Go Download
 package for (Mac, Linux or Windows)
@@ -120,6 +133,12 @@ func main() {
     fmt.Printf("bVal: %v\n", bVal)
 }
 ```
+### Print variarables with format
+![Printf- Format specifiers ](/img/fmtprint.png "Table formats")
+### Local and Global variables
+
+
+
 
 
 
