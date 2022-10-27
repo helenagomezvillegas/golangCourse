@@ -243,6 +243,12 @@ or we can use strconv package https://pkg.go.dev/strconv
 # Operators and control flows
 see all operator in https://go.dev/ref/spec#Operators
 
+## if statement;
+ if  condition {
+
+    }
+
+
 
 
 
