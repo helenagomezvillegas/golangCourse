@@ -247,6 +247,16 @@ see all operator in https://go.dev/ref/spec#Operators
  if  condition {
 
     }
+## switch
+
+		switch condition {
+		case value:
+			...
+		case value:
+			...
+		default:
+			..
+		}
 
 
 
